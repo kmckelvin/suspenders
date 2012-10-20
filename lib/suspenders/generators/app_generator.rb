@@ -125,7 +125,6 @@ module Suspenders
         build :configure_capybara_webkit
       end
 
-      build :setup_guard_spork
       build :add_email_validator
       build :setup_default_rake_task
       build :setup_clearance
