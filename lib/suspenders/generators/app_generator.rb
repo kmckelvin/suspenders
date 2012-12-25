@@ -54,6 +54,7 @@ module Suspenders
     def remove_files_we_dont_need
       build :remove_public_index
       build :remove_rails_logo_image
+      build :remove_application_erb_layout
     end
 
     def setup_development_environment
@@ -150,6 +151,7 @@ module Suspenders
       if options[:clearance]
         build :generate_clearance
         build :include_clearance_matchers
+        build :remove_application_erb_layout
 
         if using_active_record?
           build :set_attr_accessibles_on_user

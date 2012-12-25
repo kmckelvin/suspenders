@@ -14,6 +14,10 @@ module Suspenders
       remove_file 'app/assets/images/rails.png'
     end
 
+    def remove_application_erb_layout
+      remove_file 'app/views/layouts/application.html.erb'
+    end
+
     def raise_delivery_errors
       replace_in_file 'config/environments/development.rb',
         'raise_delivery_errors = false', 'raise_delivery_errors = true'
@@ -59,7 +63,6 @@ module Suspenders
     end
 
     def create_application_layout
-      remove_file 'app/views/layouts/application.html.erb'
       template 'suspenders_layout.html.slim.erb',
         'app/views/layouts/application.html.slim',
         :force => true
