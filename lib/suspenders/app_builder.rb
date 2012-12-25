@@ -94,6 +94,11 @@ module Suspenders
         :after => /gem 'jquery-rails'/
     end
 
+    def add_twitter_bootstrap
+      inject_into_file "Gemfile", "\ngem 'bootstrap-sass'\ngem 'font-awesome-sass-rails'",
+        after: /group :assets do/
+    end
+
     def add_clearance_gem
       inject_into_file 'Gemfile', "\ngem 'clearance'",
         :after => /gem 'jquery-rails'/

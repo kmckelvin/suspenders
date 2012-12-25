@@ -35,6 +35,7 @@ module Suspenders
       invoke :create_suspenders_views
       invoke :create_common_javascripts
       invoke :add_jquery_ui
+      invoke :add_twitter_bootstrap
       invoke :setup_database
       invoke :configure_app
       invoke :setup_stylesheets
@@ -96,6 +97,11 @@ module Suspenders
     def add_jquery_ui
       say 'Add jQuery ui to the standard application.js'
       build :add_jquery_ui
+    end
+
+    def add_twitter_bootstrap
+      say "Adding bootstrap-sass and font-awesome"
+      build :add_twitter_bootstrap
     end
 
     def customize_gemfile
