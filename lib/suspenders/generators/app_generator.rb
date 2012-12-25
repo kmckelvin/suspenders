@@ -36,6 +36,7 @@ module Suspenders
       invoke :create_common_javascripts
       invoke :add_jquery_ui
       invoke :add_twitter_bootstrap
+      invoke :generate_simple_form
       invoke :setup_database
       invoke :configure_app
       invoke :setup_stylesheets
@@ -102,6 +103,10 @@ module Suspenders
     def add_twitter_bootstrap
       say "Adding bootstrap-sass and font-awesome"
       build :add_twitter_bootstrap
+    end
+
+    def generate_simple_form
+      build :generate_simple_form
     end
 
     def customize_gemfile

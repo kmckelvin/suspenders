@@ -153,6 +153,10 @@ module Suspenders
       generate 'rspec:install'
     end
 
+    def generate_simple_form
+      generate 'simple_form:install --bootstrap'
+    end
+
     def configure_capybara_webkit
       append_file 'spec/spec_helper.rb' do
         "\n  Capybara.javascript_driver = :webkit"
