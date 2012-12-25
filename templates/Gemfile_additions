@@ -1,9 +1,9 @@
 gem 'bourbon'
+gem 'carrierwave'
 gem 'high_voltage'
 gem 'honeybadger'
 gem 'flutie'
 gem 'simple_form'
-gem 'paperclip'
 gem 'slim-rails'
 gem 'thin'
 
