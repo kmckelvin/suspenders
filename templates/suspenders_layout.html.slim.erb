@@ -1,0 +1,17 @@
+doctype 5
+html
+  head
+    meta charset="utf-8"
+    title = page_title
+    = stylesheet_link_tag :application, media: 'all'
+    = csrf_meta_tags
+  body class="#{body_class}"
+    header
+      - if signed_in?
+        = link_to "Sign out", sign_out_path, method: :delete
+      - else
+        = link_to "Sign in", sign_in_path
+    = render 'flashes'
+    = yield
+    = render 'javascript'
+
