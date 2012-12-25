@@ -1,11 +1,11 @@
-gem 'thin'
-gem 'high_voltage'
-gem 'paperclip'
-gem 'formtastic'
-gem 'flutie'
 gem 'bourbon'
+gem 'high_voltage'
 gem 'honeybadger'
+gem 'flutie'
+gem 'formtastic'
+gem 'paperclip'
 gem 'slim-rails'
+gem 'thin'
 
 group :development do
   gem 'foreman'
