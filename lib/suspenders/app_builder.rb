@@ -59,6 +59,7 @@ module Suspenders
     end
 
     def create_application_layout
+      remove_file 'app/views/layouts/application.html.erb'
       template 'suspenders_layout.html.slim.erb',
         'app/views/layouts/application.html.slim',
         :force => true
