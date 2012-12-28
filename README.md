@@ -1,19 +1,9 @@
-# Suspenders [![Build Status](https://secure.travis-ci.org/thoughtbot/suspenders.png?branch=master)](http://travis-ci.org/thoughtbot/suspenders)
+Usage
+-----
 
-Suspenders is the base Rails application used at [thoughtbot](http://thoughtbot.com/community).
+Run
 
-  ![Suspenders boy](http://media.tumblr.com/1TEAMALpseh5xzf0Jt6bcwSMo1_400.png)
-
-Installation
-------------
-
-First install the suspenders gem:
-
-    gem install suspenders
-
-Then run:
-
-    suspenders projectname
+    bin/suspenders projectname
 
 This will create a Rails 3.2 app in `projectname`. This script creates a new
 new git repository. It is not meant to be used against an existing repo.
@@ -21,18 +11,19 @@ new git repository. It is not meant to be used against an existing repo.
 Gemfile
 -------
 
-To see the latest and greatest gems, look at Suspenders'
-[template/Gemfile_additions](/thoughtbot/suspenders/blob/master/templates/Gemfile_additions),
+Suspenders adds a set of standard gems to the Gemfile. See
+[template/Gemfile_additions](/kmckelvin/suspenders/blob/master/templates/Gemfile_additions),
 which will be appended to the default generated projectname/Gemfile.
 
 It includes application gems like:
 
-* [Airbrake](/airbrake/airbrake) for exception notification
-* [Bourbon](/thoughtbot/bourbon) for Sass mixins
+* [Carrierwave](/jnicklas/carrierwave) for file uploads
 * [Clearance](/thoughtbot/clearance) for authentication
+* [Compass](/Compass/compass-rails) for Sass mixins
 * [Flutie](/thoughtbot/flutie) for default CSS styles
-* [Formtastic](/justinfrench/formtastic) for form markup and style
-* [Paperclip](/thoughtbot/paperclip) for file uploads
+* [Honeybadger](/honeybadger-io/honeybadger-ruby) for exception notification
+* [Simple Form](/plataformatec/simple_form) for form markup and style
+* [Slim](/stonean/slim) for cleaner markup
 
 And testing gems like:
 
@@ -55,6 +46,7 @@ Suspenders also comes with:
 * A few nice time formats set up for localization.
 * [Heroku-recommended asset pipeline
   settings](https://devcenter.heroku.com/articles/rails3x-asset-pipeline-cedar/).
+* Quiet Assets
 
 Heroku
 ------
@@ -112,20 +104,8 @@ integration testing. It requires QT. Instructions for installing QT are
 
 PostgreSQL needs to be installed and running for the `db:create` rake task.
 
-Issues
-------
-
-If you have problems, please create a [Github Issue](/thoughtbot/suspenders/issues).
-
-Contributing
-------------
-
-Please see CONTRIBUTING.md for details.
-
 Credits
 -------
-
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
 Suspenders is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
 
