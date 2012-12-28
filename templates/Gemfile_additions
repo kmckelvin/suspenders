@@ -1,6 +1,5 @@
 gem 'carrierwave'
 gem 'compass'
-gem 'flutie'
 gem 'high_voltage'
 gem 'honeybadger'
 gem 'simple_form'
