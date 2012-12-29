@@ -17,6 +17,8 @@ which will be appended to the default generated projectname/Gemfile.
 
 It includes application gems like:
 
+* [Bootstrap-sass](/thomas-mcdonald/bootstrap-sass) - Twitter Bootstrap integration through the asset pipeline
+* [Font-Awesome](/littlebtc/font-awesome-sass-rails) - Font Awesome styles served through the asset pipeline
 * [Carrierwave](/jnicklas/carrierwave) for file uploads
 * [Clearance](/thoughtbot/clearance) for authentication
 * [Compass](/Compass/compass-rails) for Sass mixins
